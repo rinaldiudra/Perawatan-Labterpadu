@@ -1,0 +1,66 @@
+{% extends "layout.j2" %}
+
+{% block title %}Lihat Data Staf{% endblock %}
+
+{% block judul_halaman %}Lihat Data Staf{% endblock %}
+
+{% block main %}
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex no-block align-items-center">
+                                    <div>
+                                        <h4 class="card-title">Data Staf</h4>
+                                    </div>
+                                </div>
+                    
+                                <form class="form">
+                                    <div class="form-group m-t-40 row">
+                                        <label for="example-text-input" class="col-2 col-form-label">ID</label>
+                                        <div class="col-10">
+                                            <p class="form-control-static">P123</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-t-40 row">
+                                        <label for="example-text-input" class="col-2 col-form-label">Nama</label>
+                                        <div class="col-10">
+                                            <p class="form-control-static">Justin</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-t-40 row">
+                                        <label for="example-text-input" class="col-2 col-form-label">Jabatan</label>
+                                        <div class="col-10">
+                                            <p class="form-control-static">Pekerja</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-t-40 row">
+                                        <label for="example-text-input" class="col-2 col-form-label">No HP</label>
+                                        <div class="col-10">
+                                            <p class="form-control-static">081234567890</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-t-40 row">
+                                        <label for="example-text-input" class="col-2 col-form-label">Email</label>
+                                        <div class="col-10">
+                                            <p class="form-control-static">user@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                    <label for="example-date-input" class="col-2 col-form-label">Foto</label>
+                                        <div class="col-lg-3 col-md-6 m-b-20"><img src="{{ url_for('static', filename='images/user.jpg') }}" class="radius" width="100"></div>
+                                    </div>
+                                    <div align="right">
+                                    <a href="/staf"> <button type="button" class="btn btn-inverse">Kembali</button></a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->            
+            </div>
+        </div>
+        </div>
+{% endblock %} 

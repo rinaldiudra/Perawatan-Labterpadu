@@ -1,0 +1,75 @@
+{% extends "layout.j2" %}
+
+{% block title %}Tambah Peralatan{% endblock %}
+
+{% block judul_halaman %}Tambah Peralatan{% endblock %}
+
+{% block main %}
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex no-block align-items-center">
+                                    <div>
+                                        <h4 class="card-title">Masukkan Data Peralatan</h4>
+                                    </div>
+                                </div>
+                    
+                                <form class="form">
+                                    <div class="form-group m-t-40 row">
+                                        <label for="example-text-input" class="col-2 col-form-label">Nama Peralatan</label>
+                                        <div class="col-10">
+                                            <input class="form-control" type="text" id="example-text-input">
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-t-40 row">
+                                        <label for="example-text-input" class="col-2 col-form-label">No Inventori</label>
+                                        <div class="col-10">
+                                            <input class="form-control" type="text" id="example-text-input">
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-t-40 row">
+                                        <label for="example-text-input" class="col-2 col-form-label">Spesifikasi</label>
+                                        <div class="col-10">
+                                            <textarea class="form-control" rows="4"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-t-40 row">
+                                        <label for="example-text-input" class="col-2 col-form-label">Lokasi</label>
+                                        <div class="col-10">
+                                            <input class="form-control" type="text" id="example-text-input">
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-t-40 row">
+                                        <label for="example-text-input" class="col-2 col-form-label">Interval Perawatan (Bulan)</label>
+                                        <div class="col-10">
+                                            <input class="form-control" type="number" id="example-text-input">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-date-input" class="col-2 col-form-label">Perawatan Selanjutnya</label>
+                                        <div class="col-10">
+                                            <input class="form-control" type="date" id="example-date-input">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-date-input" class="col-2 col-form-label">Foto</label>
+                                        <div class="col-10">
+                                            <input type="file" class="form-control" id="customFile">
+                                        </div>
+                                    </div>
+                                    <div align="right">
+                                        <a href="/daftarperalatan"> <button type="button" class="btn btn-inverse">Batal</button></a>
+                                        <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Simpan</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->            
+            </div>
+        </div>
+        </div>
+{% endblock %}

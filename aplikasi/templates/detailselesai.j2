@@ -1,0 +1,130 @@
+{% extends "layout.j2" %}
+
+{% block title %}Selesai{% endblock %}
+
+{% block judul_halaman %}Selesai{% endblock %}
+
+{% block main %}
+            <div class="container-fluid">
+                <div class="col-12 m-t-30"">
+                    <div class="card card-body">
+                            <div class="row">
+                                <div class="col-md-4 col-lg-3 text-center">
+                                    <img src="{{ url_for('static', filename='images/lapor.jpg') }}" width="180" class="radius">
+                                </div>
+                                <div class="col-md-8 col-lg-9">
+                                    <h4><b>ID Laporan : L122</b></h4>
+                                    <hr>
+                                    <h5>Lokasi : Lantai 2 Ruang A</h5>
+                                    <hr>
+                                    <h5>Assalamualaikum, saluran air di ruang A lantai 2 sudah 5 hari bermasalah mohon segera diperbaiki, terima kasih.</h5>
+                                    <hr>
+                                    Penggirim : Clarissa (04/01/2020, 14:30)
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 m-t-30"">
+                    <div class="card card-body">
+                            <div class="row">
+                                <div class="col-md-4 col-lg-3 text-center">
+                                    <img src="{{ url_for('static', filename='images/user2.jpg') }}" alt="user" width="120" class="img-circle">
+                                </div>
+                                <div class="col-md-8 col-lg-9">
+                                  <h4><b>ID Pekerja : P123</b></h4>
+                                    <hr>
+                                    <h5>Nama : Justin</h5>
+                                    <hr>
+                                    <h5>No HP : 081234567890</h5>
+                                </div>
+                            </div>
+                    </div>
+                <!-- Card  -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <ul class="timeline">
+                                    <li>
+                                        <div class="timeline-badge info"><i class="mdi mdi-file-document"></i> </div>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading">
+                                                <h4 class="timeline-title">Selesai</h4>
+                                                <p><small class="text-muted">09/01/2020, 13:22</small> </p>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <div class="col-md-3 col-xs-12"><img src="/static/images/selesai.jpg" alt="user" class="radius" width="120"></div>
+                                                <p>Saluran air di ruang A lantai 2 sudah selesai diperbaiki</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-badge info"><i class="mdi mdi-file-document"></i> </div>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading">
+                                                <h4 class="timeline-title">Terverifikasi</h4>
+                                                <p><small class="text-muted">09/01/2020, 13:22</small> </p>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p>Hasil pekerjaan telah terverifikasi</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="timeline-badge info"><i class="mdi mdi-file-document"></i> </div>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading">
+                                                <h4 class="timeline-title">Meminta Verifikasi </h4>
+                                                <p><small class="text-muted">07/01/2020, 11:12</small> </p>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p>Pekerja meminta verifikasi hasil pekerjaan</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-badge info"><i class="mdi mdi-file-document"></i> </div>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading">
+                                                <h4 class="timeline-title">Laporan dikerjakan</h4>
+                                                <p><small class="text-muted">06/01/2020, 16:15</small> </p>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p>Laporan dikerjakan oleh pekerja</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="timeline-badge info"><i class="mdi mdi-file-document"></i> </div>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading">
+                                                <h4 class="timeline-title">Laporan ditugaskan ke Pekerja</h4>
+                                                <p><small class="text-muted">05/01/2020, 10:22</small> </p>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p>Laporan ditugaskan kepada : Justin</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-badge info"><i class="mdi mdi-file-document"></i> </div>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading">
+                                                <h4 class="timeline-title">Laporan Terkirim</h4>
+                                                <p><small class="text-muted">04/01/2020, 14:30</small> </p>
+                                            </div>
+                                            <div class="timeline-body">
+                                                <p>Laporan dikirimkan oleh : Clarissa</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+            </div>
+        </div>
+{% endblock %}

@@ -1,0 +1,80 @@
+{% extends "layout.j2" %}
+
+{% block title %}Lihat Rincian Peralatan{% endblock %}
+
+{% block judul_halaman %}Lihat Rincian Peralatan{% endblock %}
+
+{% block main %}
+<div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex no-block align-items-center">
+                                    <div>
+                                        <h4 class="card-title">Rincian Peralatan</h4>
+                                    </div>
+                                </div>
+                    
+                                <form class="form">
+                                    <div class="form-group m-t-40 row">
+                                        <label for="example-text-input" class="col-2 col-form-label">Nama Peralatan</label>
+                                        <div class="col-10">
+                                            <p class="form-control-static">Air Conditioner (AC)</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-t-40 row">
+                                        <label for="example-text-input" class="col-2 col-form-label">No Inventori</label>
+                                        <div class="col-10">
+                                            <p class="form-control-static">12345</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-t-40 row">
+                                        <label for="example-text-input" class="col-2 col-form-label">Spesifikasi</label>
+                                        <div class="col-10">
+                                            <p class="form-control-static">Merek Panasonic Tipe XXXXX</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-t-40 row">
+                                        <label for="example-text-input" class="col-2 col-form-label">Lokasi</label>
+                                        <div class="col-10">
+                                            <p class="form-control-static">Lantai 2 Ruang A</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-t-40 row">
+                                        <label for="example-text-input" class="col-2 col-form-label">Interval Perawatan (Bulan)</label>
+                                        <div class="col-10">
+                                            <p class="form-control-static">3</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-date-input" class="col-2 col-form-label">Perawatan Sebelumnya</label>
+                                        <div class="col-10">
+                                            <p class="form-control-static">08/02/2020</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-date-input" class="col-2 col-form-label">Perawatan Selanjutnya</label>
+                                        <div class="col-10">
+                                            <p class="form-control-static">08/05/2020</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                    <label for="example-date-input" class="col-2 col-form-label">Foto</label>
+                                        <div class="col-lg-3 col-md-6 m-b-20"><img src="{{ url_for('static', filename='images/ac.jpg') }}" class="img-responsive radius" /></div>
+                                    </div>
+                                    <div align="right">
+                                    <a href="/daftarperalatan"> <button type="button" class="btn btn-inverse">Kembali</button></a>
+                                        <button type="submit" class="btn btn-danger"> <i class="fa fa-trash"></i> Hapus</button>
+                                        <a href="/editperalatan"><button type="button" class="btn btn-success"> <i class="fa fa-edit"></i> Edit</button></a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->            
+            </div>
+        </div>
+        </div>
+{% endblock %}

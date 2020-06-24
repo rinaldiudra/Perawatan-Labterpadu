@@ -1,0 +1,197 @@
+{% extends "layout.j2" %}
+
+{% block title %}Staf{% endblock %}
+
+{% block judul_halaman %}Staf{% endblock %}
+
+{% block main %}
+            <div class="container-fluid">
+                <div class="button-box">
+                    <a href="/tambahstaf"> <button type="button" class="btn waves-effect waves-light btn-rounded btn-themecolor">Tambah</button> </a>
+                </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive m-t-40">
+                        <table id="myTable" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nama</th>
+                                    <th>No HP</th>
+                                    <th>Jabatan</th>
+                                    <th>Status</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>P123</td>
+                                    <td><img src="{{ url_for('static', filename='images/user.jpg') }}" alt="user" class="img-circle" width="40"/>
+                                    Justin
+                                    </td>
+                                    <td>081234567890</td>
+                                    <td>Koordinator</td>
+                                    <td>                                    
+                                        <div class="switch">
+                                            <label>NONAKTIF
+                                            <input type="checkbox" checked><span class="lever">
+                                            </span>AKTIF</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="/ubahpassword"> <button type="button" class="btn waves-effect waves-light btn-rounded btn-success">Ubah Password</button> </a>
+                                    </td>
+                                    <td>
+                                        <a href="/lihatstaf"> <button type="button" class="btn waves-effect waves-light btn-rounded btn-themecolor">Lihat</button> </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>P124</td>
+                                    <td>
+                                        <img src="{{ url_for('static', filename='images/user4.jpg') }}" alt="user" class="img-circle" width="40"/>
+                                        Alex
+                                    </td>
+                                    <td>081234567890</td>
+                                    <td>Pekerja</td>
+                                    <td>                                    
+                                        <div class="switch">
+                                            <label>NONAKTIF
+                                            <input type="checkbox" checked><span class="lever">
+                                            </span>AKTIF</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="/ubahpassword"> <button type="button" class="btn waves-effect waves-light btn-rounded btn-success">Ubah Password</button> </a>
+                                    </td>
+                                    <td>
+                                        <a href="/lihatstaf"> <button type="button" class="btn waves-effect waves-light btn-rounded btn-themecolor">Lihat</button> </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>P125</td>
+                                    <td>
+                                        <img src="{{ url_for('static', filename='images/user2.jpg') }}" alt="user" class="img-circle" width="40"/>
+                                        Bryan</td>
+                                    <td>081234567890</td>
+                                    <td>Pekerja</td>
+                                    <td>                                    
+                                        <div class="switch">
+                                            <label>NONAKTIF
+                                            <input type="checkbox" checked><span class="lever">
+                                            </span>AKTIF</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="/ubahpassword"> <button type="button" class="btn waves-effect waves-light btn-rounded btn-success">Ubah Password</button> </a>
+                                    </td>
+                                    <td>
+                                        <a href="/lihatstaf"> <button type="button" class="btn waves-effect waves-light btn-rounded btn-themecolor">Lihat</button> </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>P126</td>
+                                    <td>
+                                        <img src="{{ url_for('static', filename='images/user3.jpg') }}" alt="user" class="img-circle" width="40"/>
+                                        Louis
+                                    </td>
+                                    <td>081234567890</td>
+                                    <td>Manager</td>
+                                    <td>                                    
+                                        <div class="switch">
+                                            <label>NONAKTIF
+                                            <input type="checkbox" checked><span class="lever">
+                                            </span>AKTIF</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="/ubahpassword"> <button type="button" class="btn waves-effect waves-light btn-rounded btn-success">Ubah Password</button> </a>
+                                    </td>
+                                    <td>
+                                        <a href="/lihatstaf"> <button type="button" class="btn waves-effect waves-light btn-rounded btn-themecolor">Lihat</button> </a>
+                                    </td>
+                                </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+</div>
+{% endblock %}
+
+<!-- All Jquery -->
+<!-- ============================================================== -->
+    <script src="{{ url_for('static', filename='assets/plugins/jquery/jquery.min.js') }}"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="{{ url_for('static', filename='assets/plugins/bootstrap/js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="{{ url_for('static', filename='js/jquery.slimscroll.js') }}"></script>
+    <!--Wave Effects -->
+    <script src="{{ url_for('static', filename='js/waves.js') }}"></script>
+    <!--Menu sidebar -->
+    <script src="{{ url_for('static', filename='js/sidebarmenu.js') }}"></script>
+    <!--stickey kit -->
+    <script src="{{ url_for('static', filename='assets/plugins/sticky-kit-master/dist/sticky-kit.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/plugins/sparkline/jquery.sparkline.min.js') }}"></script>
+    <!--Custom JavaScript -->
+    <script src="{{ url_for('static', filename='js/custom.min.js') }}"></script>
+    <!-- This is data table -->
+    <script src="{{ url_for('static', filename='assets/plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script>
+    $(document).ready(function() {
+    $('#myTable').DataTable();
+    $(document).ready(function() {
+    var table = $('#example').DataTable({
+        "columnDefs": [{
+            "visible": false,
+            "targets": 2
+        }],
+        "order": [
+            [2, 'asc']
+        ],
+        "displayLength": 25,
+        "drawCallback": function(settings) {
+            var api = this.api();
+            var rows = api.rows({
+                page: 'current'
+            }).nodes();
+            var last = null;
+            api.column(2, {
+                page: 'current'
+            }).data().each(function(group, i) {
+                if (last !== group) {
+                    $(rows).eq(i).before('<tr class="group"><td colspan="5">' + group + '</td></tr>');
+                    last = group;
+                }
+            });
+        }
+    });
+    // Order by the grouping
+    $('#example tbody').on('click', 'tr.group', function() {
+        var currentOrder = table.order()[0];
+        if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
+            table.order([2, 'desc']).draw();
+        } else {
+            table.order([2, 'asc']).draw();
+        }
+    });
+    });
+    });
+    $('#example23').DataTable({
+    dom: 'Bfrtip',
+    buttons: [
+    'copy', 'csv', 'excel', 'pdf', 'print'
+    ]
+    });
+    </script>
+    <!-- ============================================================== -->
+    <!-- Style switcher -->
+    <!-- ============================================================== -->
+    <script src="{{ url_for('static', filename='assets/plugins/styleswitcher/jQuery.style.switcher.js') }}"></script>
+    <script>
+    $(document).ready(function() {
+    $(".dataTables_filter").removeAttr("top");
+    });
+    </script>
